@@ -1,0 +1,75 @@
+[debug] [2021-02-01T16:08:39.116Z] ----------------------------------------------------------------------
+[debug] [2021-02-01T16:08:39.118Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ADITI\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-02-01T16:08:39.118Z] CLI Version:   9.2.2
+[debug] [2021-02-01T16:08:39.118Z] Platform:      win32
+[debug] [2021-02-01T16:08:39.118Z] Node Version:  v12.18.2
+[debug] [2021-02-01T16:08:39.119Z] Time:          Mon Feb 01 2021 21:38:39 GMT+0530 (India Standard Time)
+[debug] [2021-02-01T16:08:39.119Z] ----------------------------------------------------------------------
+[debug] [2021-02-01T16:08:39.119Z] 
+[debug] [2021-02-01T16:08:39.123Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-01T16:08:39.123Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  E:\front-end with react\instagram-clone\insta_clone
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-01T16:09:23.584Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-01T16:09:25.202Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-02-01T16:09:25.202Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project insta-clone-890fd (Insta-clone) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-01T16:13:33.179Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-01T16:13:34.010Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-01T16:13:34.010Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.5","browserURL":"https://www.gstatic.com/firebasejs/8.2.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.5/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.5/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.5/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.5/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.5/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.5/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.5/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.5/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.memory.js"}}
+[info] +  Wrote build/index.html 
+[info] 
+[info] i  Detected a .git folder at E:\front-end with react\instagram-clone\insta_clone 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=769832908&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-01T16:14:25.743Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"9c62c00bdb2354452974","redirect_uri":"http://localhost:9005","state":"769832908"}
+[debug] [2021-02-01T16:14:26.437Z] <<< HTTP RESPONSE 200 {"date":"Mon, 01 Feb 2021 16:14:25 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","server":"GitHub.com","status":"200 OK","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With, Accept-Encoding","etag":"W/\"ade88206b5d8d026a700c3c5e7043652\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"FB0D:7D4A:8F018A:9F9981:601828E0"}
+[debug] [2021-02-01T16:14:26.438Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-01T16:14:27.464Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-01T16:14:27.464Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"aditi234","id":62647877,"node_id":"MDQ6VXNlcjYyNjQ3ODc3","avatar_url":"https://avatars.githubusercontent.com/u/62647877?v=4","gravatar_id":"","url":"https://api.github.com/users/aditi234","html_url":"https://github.com/aditi234","followers_url":"https://api.github.com/users/aditi234/followers","following_url":"https://api.github.com/users/aditi234/following{/other_user}","gists_url":"https://api.github.com/users/aditi234/gists{/gist_id}","starred_url":"https://api.github.com/users/aditi234/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aditi234/subscriptions","organizations_url":"https://api.github.com/users/aditi234/orgs","repos_url":"https://api.github.com/users/aditi234/repos","events_url":"https://api.github.com/users/aditi234/events{/privacy}","received_events_url":"https://api.github.com/users/aditi234/received_events","type":"User","site_admin":false,"name":"Aditi Sahu","company":null,"blog":"","location":"Narsinghpur ,Madhya Pradesh","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":5,"public_gists":0,"followers":1,"following":2,"created_at":"2020-03-25T10:53:39Z","updated_at":"2021-02-01T16:14:24Z","private_gists":0,"total_private_repos":5,"owned_private_repos":5,"disk_usage":18724,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as aditi234 
+[info] 
+[debug] [2021-02-01T16:18:40.318Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-02-01T16:18:41.274Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-02-01T16:18:41.829Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-02-01T16:18:41.829Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-01T16:18:42.235Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-02-01T16:18:42.236Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-01T16:18:49.568Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2021-02-01T16:18:50.788Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2021-02-01T16:18:50.789Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-01T16:22:05.174Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2021-02-01T16:22:07.804Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2021-02-01T16:22:07.804Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2021-02-01T16:31:48.798Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2021-02-01T16:31:49.902Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2021-02-01T16:31:49.902Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
