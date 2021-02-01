@@ -11,9 +11,15 @@
     border-bottom: 1px solid lightgray;
 }
 
+.post_like{
+    padding: 5px 20px;
+}
+
 .post_text{
     font-weight: normal;
-    padding: 20px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .post_header{
@@ -24,4 +30,29 @@
 
 .post_avatar{
     margin-right: 10px;
+}
+
+.post_commentBox{
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.post_comments{
+    padding: 20px;
+}
+
+.post_input{
+    flex:1;
+    border:none;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.post_button{
+    flex:0;
+    border:none;
+    color: #6082a3;
+    background-color: transparent;
+    border-top: 1px solid lightgray;
 }

@@ -11,4 +11,21 @@
   object-fit: contain;
   padding: 10px;
   border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  position:sticky;
+  top: 0;
+}
+
+.app__headerImage{
+  object-fit: contain;
+}
+
+.app_signup{
+  display: flex;
+  flex-direction: column;
+}
+
+.app_posts{
+  padding: 20px;
 }
