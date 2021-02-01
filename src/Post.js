@@ -69,12 +69,12 @@ function Post({postId,username, user, caption, imageUrl}){
             </div>
             <img className="post_image" src={imageUrl} alt="ima of dance"/>
             <div className="post_like">
-                {user && like? (
+                {user && (like? (
                      <AiTwotoneHeart onClick={setLikeHandler} size="25px"/>
                 ):
                 (
                     <AiOutlineHeart onClick={setLikeHandler} size="25px"/>
-                )}
+                ))}
               
               <h4>{likes}</h4>
             </div>
