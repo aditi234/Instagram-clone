@@ -9,13 +9,12 @@ export default function Login({ user, setUser, username, setUsername }) {
   const [email, setEmail] = useState("");
   const { push } = useHistory();
 
-  const SignInMode = () => {
+  const SignInMode = (e) => {
     setMode(false);
   };
-  const SignUpMode = () => {
+  const SignUpMode = (event) => {
     setMode(true);
   };
-
   const signUp = (e) => {
     e.preventDefault();
     if (mode) {
