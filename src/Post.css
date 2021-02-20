@@ -15,6 +15,14 @@
     padding: 5px 20px;
 }
 
+.like{
+    padding-right: 10px;
+}
+
+.counts h4{
+    display: inline-block;
+}
+
 .post_text{
     font-weight: normal;
     padding-top: 2px;

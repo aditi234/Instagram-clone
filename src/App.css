@@ -1,7 +1,9 @@
 * {
   margin: 0;
 }
-
+body{
+  background-color: #fafafa;
+}
 .App{
   background-color: #fafafa;
 }
@@ -28,4 +30,80 @@
 
 .app_posts{
   padding: 20px;
+}
+
+.App {
+  font-family: sans-serif;
+}
+
+.post_avatar{
+  margin-right: 10px;
+}
+
+.box {
+  border: 1px solid lightgray;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+}
+.Login
+{
+  text-align: center;
+}
+.box img {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.box input {
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.login {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 30px;
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  color: white;
+  background-color: #77c0e9;
+  border: none;
+}
+
+.sign {
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  margin-top: 40px;
+}
+
+.signIn {
+  flex: 1;
+  border: none;
+  padding: 10px 30px;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin-top: 50px;
+}
+
+.signUp {
+  flex: 1;
+  border: none;
+  padding: 10px 30px;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin-top: 50px;
 }
