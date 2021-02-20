@@ -100,6 +100,7 @@ function Post({ postId, username, user, caption, imageUrl, likess, dislikes }) {
     };
   }, [postId]);
 
+<<<<<<< HEAD
   useEffect(() => {
     let unsubscribe;
     if (postId) {
@@ -126,6 +127,56 @@ function Post({ postId, username, user, caption, imageUrl, likess, dislikes }) {
     });
     setComment("");
   };
+=======
+    return(
+        <div className="post">
+            <div className="post_header">
+                <Avatar className="post_avatar" src={imageUrl} alt="ima of dance"/>
+                <h3>{username}</h3>
+            </div>
+            <img className="post_image" src={imageUrl} alt="ima of dance"/>
+            <div className="post_like">
+                {user && (like? (
+                     <AiTwotoneHeart onClick={setLikeHandler} size="25px"/>
+                ):
+                (
+                    <AiOutlineHeart onClick={setLikeHandler} size="25px"/>
+                ))}
+              
+              <h4>{likes}</h4>
+            </div>
+            <h4 className="post_text"><strong>{username}</strong> {caption}</h4>
+             
+            <div className="post_comments">
+              {comments.map((comment)=>(
+                   <p>
+                      <strong>{comment.username}</strong> {comment.text}
+                   </p>
+               ))}
+            </div>
+            {user &&(
+               <form className="post_commentBox">
+               <input
+                   className="post_input"
+                   placeholder="Add a comment"
+                   type="text"
+                   value={comment}
+                   onChange={(e)=> setComment(e.target.value)}
+                />
+                <button
+                  className="post_button"
+                  disabled={!comment}
+                  type="submit"
+                  onClick={postComment}
+                  >
+                      Post
+                  </button>
+               </form>
+            )} 
+        </div>
+    );
+}
+>>>>>>> 4831247cd53a99b2a1e44308ae63b608bebb9644
 
   return (
     <div className="post">
