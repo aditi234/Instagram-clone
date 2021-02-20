@@ -4,7 +4,7 @@ import { auth } from "./firebase";
 import { useHistory } from "react-router";
 
 export default function Login({ user, setUser, username, setUsername }) {
-  const [mode, setMode] = useState(false);
+  const [mode, setMode] = useState(true);
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const { push } = useHistory();
